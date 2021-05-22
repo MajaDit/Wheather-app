@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="src/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-  <h1>yep</h1>
+<div class="container"> 
+ <div class="card">
+  <div class="card-body">
+   <div class="search-form">
+    <input type="text" placeholder="Find City" autofocus="on"/> 
+    <div class="city">City</div>
+    <div class="current-temperature">20°C</div>
+    <div class="emoji">🌤</div>
+    <span class="celsius">°C</span>
+    <span class="fahrenheit">F</span>
+    <div class="percitipation">Percitipation: 1%</div>
+    <div class="humidity">Humidity: 4%</div>
+    <div class="wind">Wind: 20kmh</div>
+    <div class="description">It will be sunny today! Make sure to bring your sunglasses 😎</div>
+    
+   </div> 
+  </div>
+ </div> 
+</div>
   <script src="src/script.js"></script>
 </body>
 </html>
