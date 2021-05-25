@@ -11,3 +11,18 @@
   background-size: 100%;
   border: 1px solid black;
 }
+.emoji {
+  font-size: 40px;
+}
+.current-temperature {
+  font-size: 40px;
+}
+.units {
+  font-size: 15px;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+li {
+  list-style: none;
+}
