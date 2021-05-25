@@ -19,11 +19,20 @@
   border-radius: 3px;
   color: white;
 }
+h1 {
+  color: #aa4400;
+}
+.day-and-time {
+  font-size: 18px;
+  font-weight: 400;
+  color: #561c17;
+}
 .emoji {
   font-size: 40px;
 }
 .current-temperature {
   font-size: 40px;
+  color: #703937;
 }
 .units,
 .line {
@@ -33,11 +42,16 @@
   position: relative;
   top: 5px;
   left: -5px;
+  color: #ff9e5e;
 }
 .line {
   font-size: 15px;
   top: 8px;
+  color: #212529;
 }
 li {
   list-style: none;
+  position: relative;
+  top: 10px;
+  color: #703937;
 }
