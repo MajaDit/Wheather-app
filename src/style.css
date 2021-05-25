@@ -4,10 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 50%;
-}
 .card {
+  max-width: 530px;
   background-image: url(../image/small-resolution.png);
   background-repeat: no-repeat;
   background-size: 100%;

@@ -13,19 +13,29 @@
 <div class="container"> 
  <div class="card">
   <div class="card-body">
-   <div class="search-form">
+   <form class="search-form">
     <input type="text" placeholder="Find City" autofocus="on"/> 
+    <input type="submit" value="Search">
+   </form> 
     <div class="city">City</div>
-    <div class="current-temperature">20°C</div>
-    <div class="emoji">🌤</div>
-    <span class="celsius">°C</span>
-    <span class="fahrenheit">F</span>
-    <div class="percitipation">Percitipation: 1%</div>
-    <div class="humidity">Humidity: 4%</div>
-    <div class="wind">Wind: 20kmh</div>
-    <div class="description">It will be sunny today! Make sure to bring your sunglasses 😎</div>
-    
-   </div> 
+   <div class="row"> 
+    <div class="col-3"> 
+     <div class="row"> 
+      <div class=" col-1 emoji">🌤</div>
+      <span class=" col-7 current-temperature">20
+      <a class="celsius" href="#">°C</a>|<a class="fahrenheit" href="#">F</a>
+      </span>
+     </div> 
+    </div>
+    <div class="col-5">
+     <ul>
+     <li class="percitipation">Percitipation: 1%</li>
+     <li class="humidity">Humidity: 4%</li>
+     <li class="wind">Wind: 20kmh</li>
+     </ul>
+    </div>
+   </div>
+    <div class="description">It will be sunny today! Make sure to bring your sunglasses 😎</div> 
   </div>
  </div> 
 </div>
