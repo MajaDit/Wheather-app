@@ -44,6 +44,9 @@ h1 {
   left: -5px;
   color: #ff9e5e;
 }
+.units:hover {
+  color: #703937;
+}
 .line {
   font-size: 15px;
   top: 8px;
