@@ -9,7 +9,7 @@
   background-image: url(../image/small-resolution.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  border: 1px solid black;
+  margin-top: 30px;
 }
 .submit-button {
   padding: 0.5px 8px;
@@ -54,4 +54,5 @@ li {
   position: relative;
   top: 10px;
   color: #703937;
+  text-shadow: 1px 1px 2px #ffb380;
 }
