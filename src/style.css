@@ -11,6 +11,10 @@
   background-size: 100%;
   border: 1px solid black;
 }
+.submit-button {
+  padding: 0 5px;
+  margin: 5px;
+}
 .emoji {
   font-size: 40px;
 }
