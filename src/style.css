@@ -5,6 +5,7 @@
 }
 
 .card {
+  font-family: "KoHo", sans-serif;
   max-width: 530px;
   background-image: url(../image/small-resolution.png);
   background-repeat: no-repeat;
@@ -21,6 +22,7 @@
 }
 h1 {
   color: #aa4400;
+  font-weight: bold;
 }
 .day-and-time {
   font-size: 18px;
