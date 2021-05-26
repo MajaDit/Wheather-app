@@ -26,6 +26,7 @@ h1 {
   font-weight: bold;
 }
 .day-and-time {
+  margin-bottom: 2px;
   font-size: 18px;
   font-weight: 400;
   color: #561c17;
@@ -62,5 +63,5 @@ li {
   position: relative;
   top: 10px;
   color: #703937;
-  text-shadow: 1px 1px 2px #ffb380;
+  font-weight: bold;
 }
