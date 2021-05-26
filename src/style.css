@@ -65,3 +65,17 @@ li {
   color: #703937;
   font-weight: bold;
 }
+.credit {
+  margin-top: 3px;
+  margin-left: 2px;
+  font-size: 13px;
+}
+.credit img {
+  width: 15px;
+  position: relative;
+  bottom: 1px;
+}
+
+.credit a {
+  color: #703937;
+}
