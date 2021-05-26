@@ -27,12 +27,14 @@ h1 {
   font-weight: 400;
   color: #561c17;
 }
-.emoji {
-  font-size: 40px;
+.emoji img {
+  width: 55px;
 }
 .current-temperature {
   font-size: 40px;
   color: #703937;
+  position: relative;
+  bottom: 5px;
 }
 .units,
 .line {
@@ -40,7 +42,7 @@ h1 {
   text-decoration: none;
   vertical-align: top;
   position: relative;
-  top: 5px;
+  top: 2px;
   left: -5px;
   color: #ff9e5e;
 }
@@ -49,7 +51,7 @@ h1 {
 }
 .line {
   font-size: 15px;
-  top: 8px;
+  top: 5.5px;
   color: #212529;
 }
 li {
