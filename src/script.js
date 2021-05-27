@@ -20,11 +20,25 @@ function displayDate(response){
 
 axios.get(apiUrl).then(displayDate);
 
+function findCurrentData(response){
+  let currentTemperature = document.querySelector("#current-temperature");
+  currentTemperature.innerHTML= Math.round(response.data.main.temp);
+  let h1 = document.querySelector("#city-country");
+  let input = document.querySelector("#search-input").value;
+  h1.innerHTML=`${response.data.name}, ${response.data.sys.country}`;
+}
+function findCity(city){
+  let apiKey="ad2ff494a03279abf350d133542944f6";
+  let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(findCurrentData);
+}
 
 function submitForm(event){
   event.preventDefault();
-  axios.get(apiUrl).then(findTemperature);
+  let input = document.querySelector("#search-input").value;
+  findCity(input);
 }
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", submitForm);
+
