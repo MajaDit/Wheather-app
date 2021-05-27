@@ -26,6 +26,9 @@ function findCurrentData(response){
   let h1 = document.querySelector("#city-country");
   let input = document.querySelector("#search-input").value;
   h1.innerHTML=`${response.data.name}, ${response.data.sys.country}`;
+  let maxTemperature= document.querySelector("#max-temperature");
+  maxTemperature.innerHTML=`${Math.round(response.data.main.temp_max)}%`;
+  console.log(response);
 }
 function findCity(city){
   let apiKey="ad2ff494a03279abf350d133542944f6";
