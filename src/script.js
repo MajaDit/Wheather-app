@@ -27,7 +27,7 @@ function findCurrentData(response){
   let input = document.querySelector("#search-input").value;
   h1.innerHTML=`${response.data.name}, ${response.data.sys.country}`;
   let maxTemperature= document.querySelector("#max-temperature");
-  maxTemperature.innerHTML=`${Math.round(response.data.main.temp_max)}%`;
+  maxTemperature.innerHTML=`${Math.round(response.data.main.temp_max)}°C`;
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML=`${Math.round(response.data.main.humidity)}%`;
   let wind=document.querySelector("#wind");
