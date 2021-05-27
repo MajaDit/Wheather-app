@@ -14,9 +14,17 @@ function formatDate(timestamp){
   return ` ${day} ${month} ${hours}:${minutes}`;
 }
 function displayDate(response){
-  console.log(response.data);
   let date= document.querySelector("#date");
   date.innerHTML=formatDate(response.data.dt *1000);
 }
 
 axios.get(apiUrl).then(displayDate);
+
+
+function submitForm(event){
+  event.preventDefault();
+  axios.get(apiUrl).then(findTemperature);
+}
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", submitForm);
