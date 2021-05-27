@@ -28,6 +28,10 @@ function findCurrentData(response){
   h1.innerHTML=`${response.data.name}, ${response.data.sys.country}`;
   let maxTemperature= document.querySelector("#max-temperature");
   maxTemperature.innerHTML=`${Math.round(response.data.main.temp_max)}%`;
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML=`${Math.round(response.data.main.humidity)}%`;
+  let wind=document.querySelector("#wind");
+  wind.innerHTML=`${response.data.wind.speed}km/h`;
   console.log(response);
 }
 function findCity(city){
