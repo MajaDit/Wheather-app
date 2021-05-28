@@ -26,13 +26,13 @@ function findCurrentData(response){
   let h1 = document.querySelector("#city-country");
   let input = document.querySelector("#search-input").value;
   h1.innerHTML=`${response.data.name}, ${response.data.sys.country}`;
-  let maxTemperature= document.querySelector("#max-temperature");
-  maxTemperature.innerHTML=`${Math.round(response.data.main.temp_max)}°C`;
+  let description= document.querySelector("#description");
+  description.innerHTML=response.data.weather[0].description;
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML=`${Math.round(response.data.main.humidity)}%`;
   let wind=document.querySelector("#wind");
   wind.innerHTML=`${response.data.wind.speed}km/h`;
-  console.log(response);
+  console.log(response.data);
 }
 function findCity(city){
   let apiKey="ad2ff494a03279abf350d133542944f6";
