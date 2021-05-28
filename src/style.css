@@ -49,13 +49,14 @@ h1 {
   top: 2px;
   color: #ff9e5e;
 }
-.units:hover {
-  color: #703937;
-}
 .line {
   font-size: 15px;
   top: 5.5px;
   color: #212529;
+}
+.active {
+  cursor: default;
+  color: #703937;
 }
 ul {
   padding-left: 25px;

@@ -48,6 +48,8 @@ function displayFahrenheit(event){
   let fahrenheitTemperature = celsiusTemperature*9/5 +32;
   let temperature=document.querySelector("#current-temperature");
   temperature.innerHTML=Math.round(fahrenheitTemperature);
+  fahrenheit.classList.add("active");
+  celsius.classList.remove("active");
 }
 
 let celsiusTemperature = null
@@ -58,6 +60,8 @@ function displayCelsius(event){
   event.preventDefault();
   let temperature=document.querySelector("#current-temperature");
   temperature.innerHTML=celsiusTemperature;
+  fahrenheit.classList.remove("active");
+  celsius.classList.add("active");
 }
 
 let celsius=document.querySelector("#celsius");
