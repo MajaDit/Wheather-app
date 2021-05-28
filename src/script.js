@@ -15,7 +15,6 @@ function findCurrentData(response){
   let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML= Math.round(response.data.main.temp);
   let h1 = document.querySelector("#city-country");
-  let input = document.querySelector("#search-input").value;
   h1.innerHTML=`${response.data.name}, ${response.data.sys.country}`;
   let description= document.querySelector("#description");
   description.innerHTML=response.data.weather[0].description;
@@ -25,7 +24,7 @@ function findCurrentData(response){
   wind.innerHTML=`${response.data.wind.speed}km/h`;
   let date= document.querySelector("#date");
   date.innerHTML=formatDate(response.data.dt *1000);
-  console.log(response.data);
+  celsiusTemperature=Math.round(response.data.main.temp);
 }
 function findCity(city){
   let apiKey="ad2ff494a03279abf350d133542944f6";
@@ -43,3 +42,23 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", submitForm);
 
 findCity("London");
+
+function displayFahrenheit(event){
+  event.preventDefault();
+  let fahrenheitTemperature = celsiusTemperature*9/5 +32;
+  let temperature=document.querySelector("#current-temperature");
+  temperature.innerHTML=Math.round(fahrenheitTemperature);
+}
+
+let celsiusTemperature = null
+let fahrenheit=document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", displayFahrenheit);
+
+function displayCelsius(event){
+  event.preventDefault();
+  let temperature=document.querySelector("#current-temperature");
+  temperature.innerHTML=celsiusTemperature;
+}
+
+let celsius=document.querySelector("#celsius");
+celsius.addEventListener("click", displayCelsius);
