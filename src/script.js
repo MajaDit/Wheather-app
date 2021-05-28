@@ -1,6 +1,6 @@
-let apiKey="ad2ff494a03279abf350d133542944f6";
-let city ="London"
-let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiKey="ad2ff494a03279abf350d133542944f6";
+  let city ="London"
+  let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 function formatDate(timestamp){
   let date = new Date(timestamp);
@@ -49,3 +49,4 @@ function submitForm(event){
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", submitForm);
 
+findCity("London");
