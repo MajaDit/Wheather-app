@@ -31,8 +31,11 @@ h1 {
   font-weight: 400;
   color: #561c17;
 }
-.emoji img {
-  width: 55px;
+.icon img {
+  width: 75px;
+  position: relative;
+  bottom: 10px;
+  left: -5px;
 }
 .current-temperature {
   font-size: 40px;
