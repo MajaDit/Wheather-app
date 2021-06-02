@@ -10,7 +10,22 @@
   return ` ${day} ${month} ${hours}:${minutes}`;
 }
 
+function displayForecast(){
+  let forecastElement=document.querySelector("#forecast");
+  let forecastHTML= `<div class="row">`;
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day){
+  forecastHTML= 
+    forecastHTML + `
+    <div class="col-2 forecast">
+      <span class="forecast-day">${day}</span>
+      <img class="forecast-icon" src="https://img.icons8.com/doodle/96/000000/moon-and-sun.png" alt="icon" />
+      <span class="forecast-min-temp">18° - </span><span class="forecast-max-temp">20°</span>
+    </div>`;})
+    forecastHTML= forecastHTML + `</div>`;
 
+  forecastElement.innerHTML= forecastHTML;
+}
 function findCurrentData(response){
   let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML= Math.round(response.data.main.temp);
@@ -43,8 +58,6 @@ function submitForm(event){
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", submitForm);
 
-findCity("London");
-
 function displayFahrenheit(event){
   event.preventDefault();
   let fahrenheitTemperature = celsiusTemperature*9/5 +32;
@@ -68,3 +81,6 @@ function displayCelsius(event){
 
 let celsius=document.querySelector("#celsius");
 celsius.addEventListener("click", displayCelsius);
+
+displayForecast();
+findCity("London");
