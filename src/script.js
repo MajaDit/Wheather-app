@@ -27,7 +27,8 @@ function displayForecast(response){
       <span class="forecast-day">${formatDay(forecastDay.dt)}</span>
       <img class="forecast-icon" src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="icon" />
       <span class="forecast-min-temp">${Math.round(forecastDay.temp.min)}° - </span><span class="forecast-max-temp">${Math.round(forecastDay.temp.max)}°</span>
-    </div>`}});
+    </div>`}
+    });
 
     forecastHTML= forecastHTML + `</div>`;
     
@@ -50,13 +51,13 @@ function findCurrentData(response){
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML=`${Math.round(response.data.main.humidity)}%`;
   let wind=document.querySelector("#wind");
-  wind.innerHTML=`${response.data.wind.speed}km/h`;
+  wind.innerHTML=`${response.data.wind.speed}mph`;
   let date= document.querySelector("#date");
   date.innerHTML=formatDate(response.data.dt *1000);
   celsiusTemperature=Math.round(response.data.main.temp);
   let icon = document.querySelector("#icon");
   icon.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-
+console.log(response.data);
   getForecast(response.data.coord);
 }
 function findCity(city){
