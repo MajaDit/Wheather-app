@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 30px;
-  border: 1.4px solid #444444;
+  outline: #444444 1.5px solid;
 }
 .card-body {
   padding: 10px;
