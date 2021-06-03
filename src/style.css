@@ -83,6 +83,7 @@ li {
   background-color: rgb(255, 255, 255, 0.5);
   color: #561c17;
   margin-top: -13px;
+  padding-bottom: 5px;
 }
 .forecast-icon {
   width: 45px;
