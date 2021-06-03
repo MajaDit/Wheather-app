@@ -18,7 +18,6 @@ function formatDay(timestamp){
 }
 function displayForecast(response){
   let dailyForecast=response.data.daily;
-  let forecastElement=document.querySelector("#forecast");
   let forecastHTML= `<div class="row">`;
   dailyForecast.forEach(function (forecastDay, index){
    if (index < 6) {
@@ -28,10 +27,12 @@ function displayForecast(response){
       <span class="forecast-day">${formatDay(forecastDay.dt)}</span>
       <img class="forecast-icon" src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="icon" />
       <span class="forecast-min-temp">${Math.round(forecastDay.temp.min)}° - </span><span class="forecast-max-temp">${Math.round(forecastDay.temp.max)}°</span>
-    </div>`}})
-    forecastHTML= forecastHTML + `</div>`;
+    </div>`}});
 
-  forecastElement.innerHTML= forecastHTML;
+    forecastHTML= forecastHTML + `</div>`;
+    
+    let forecastElement=document.querySelector("#forecast");
+    forecastElement.innerHTML= forecastHTML;
 }
 function getForecast(coordinates){
   let apiKey="ad2ff494a03279abf350d133542944f6";
