@@ -47,23 +47,13 @@ h1 {
   position: relative;
   bottom: 5px;
 }
-.units,
-.line {
-  font-size: 20px;
+.units {
+  font-size: 23px;
   text-decoration: none;
   vertical-align: top;
   position: relative;
   top: 2px;
   color: #ff9e5e;
-}
-.line {
-  font-size: 15px;
-  top: 5.5px;
-  color: #212529;
-}
-.active {
-  cursor: default;
-  color: #703937;
 }
 ul {
   padding-left: 25px;
