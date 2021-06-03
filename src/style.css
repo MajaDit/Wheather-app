@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 30px;
-  outline: #444444 1.5px solid;
+  border: solid 1.4px #444444;
 }
 .card-body {
   padding: 10px;
@@ -73,6 +73,10 @@ li {
   background-color: rgb(255, 255, 255, 0.5);
   color: #561c17;
   margin-top: -12.5px;
+}
+#forecast {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .forecast-icon {
   width: 55px;
