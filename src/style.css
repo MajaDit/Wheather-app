@@ -15,6 +15,7 @@
 }
 .card-body {
   padding: 10px;
+  padding-bottom: 0;
 }
 .submit-button {
   padding: 0.5px 8px;
@@ -78,7 +79,10 @@ li {
 }
 .forecast {
   text-align: center;
-  margin-top: -10px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255, 0.5);
+  color: #561c17;
+  margin-top: -13px;
 }
 .forecast-icon {
   width: 45px;
