@@ -99,6 +99,10 @@ li {
   .forecast-icon {
     max-width: 35px;
   }
+  .icon img {
+    max-width: 60px;
+    margin-top: 5px;
+  }
   .forecast {
     font-size: 12px;
   }
