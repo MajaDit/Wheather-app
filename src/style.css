@@ -95,3 +95,21 @@ li {
 .credit a {
   color: #703937;
 }
+@media (max-width: 530px) {
+  .forecast-icon {
+    max-width: 35px;
+  }
+  .forecast {
+    font-size: 12px;
+  }
+  .description,
+  .humidity,
+  .wind {
+    font-size: 12px;
+  }
+}
+@media (max-width: 471px) {
+  .card {
+    background: none;
+  }
+}
