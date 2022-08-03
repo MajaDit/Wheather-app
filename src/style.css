@@ -116,4 +116,12 @@ li {
   .card {
     background: none;
   }
+  .day-and-time {
+    font-size: 12px;
+  }
+}
+@media (max-width: 376px) {
+  .day-and-time {
+    font-size: 10px;
+  }
 }
