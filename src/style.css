@@ -7,6 +7,9 @@
 .card {
   font-family: "KoHo", sans-serif;
   max-width: 530px;
+  background-image: url(../image/small-resolution.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin-top: 30px;
   border: solid 1.4px #444444;
 }
@@ -91,18 +94,4 @@ li {
 
 .credit a {
   color: #703937;
-}
-
-@media (max-width: 530px) {
-  .forecast-icon {
-    max-width: 35px;
-  }
-  .forecast {
-    font-size: 12px;
-  }
-  .description,
-  .humidity,
-  .wind {
-    font-size: 12px;
-  }
 }
